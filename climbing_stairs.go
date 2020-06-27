@@ -1,22 +1,14 @@
 package main
 
-type Cache map[int]int
-
-func climb(n int, cache Cache) int {
-	if n < 2 {
-		return 1
-	}
-
-	if result, exists := cache[n]; exists {
-		return result
-	}
-
-	result := climb(n-1, cache) + climb(n-2, cache)
-	cache[n] = result
-
-	return result
-}
-
 func ClimbStairs(n int) int {
-	return climb(n, make(Cache))
+	cache := make(map[int]int)
+
+	cache[0] = 1
+	cache[1] = 1
+
+	for i := 1; i <= n; i++ {
+		cache[i] = cache[i-1] + cache[i-2]
+	}
+
+	return cache[n]
 }
