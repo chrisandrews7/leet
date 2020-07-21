@@ -1,6 +1,6 @@
 package main
 
-func MaximumSubarray(nums []int) int {
+func maximumSubarray(nums []int) int {
 	cache := make(map[int]int)
 	largestSubArray := nums[0]
 

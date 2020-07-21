@@ -4,7 +4,7 @@ import (
 	"math"
 )
 
-func ContainerMostWater(height []int) int {
+func containerMostWater(height []int) int {
 	if len(height) < 2 {
 		return 0
 	}

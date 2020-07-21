@@ -1,6 +1,6 @@
 package main
 
-func RemoveArrayDuplicates(nums []int) int {
+func removeArrayDuplicates(nums []int) int {
 	if len(nums) == 0 {
 		return 0
 	}

@@ -18,9 +18,9 @@ func TestReverseInt(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(string(test.input), func(t *testing.T) {
-			got := ReverseInt(test.input)
+			got := reverseInt(test.input)
 			if got != test.expected {
-				t.Errorf("ReverseInt(%d) got %v, want %v", test.input, got, test.expected)
+				t.Errorf("reverseInt(%d) got %v, want %v", test.input, got, test.expected)
 			}
 		})
 	}

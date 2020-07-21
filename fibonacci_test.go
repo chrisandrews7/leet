@@ -19,9 +19,9 @@ func TestFibonacci(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(string(test.input), func(t *testing.T) {
-			got := Fibonacci(test.input)
+			got := fibonacci(test.input)
 			if got != test.expected {
-				t.Errorf("Fibonacci(%d) got %v, want %v", test.input, got, test.expected)
+				t.Errorf("fibonacci(%d) got %v, want %v", test.input, got, test.expected)
 			}
 		})
 	}

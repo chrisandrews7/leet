@@ -1,6 +1,6 @@
 package main
 
-func ClimbStairs(n int) int {
+func climbStairs(n int) int {
 	cache := make(map[int]int)
 
 	cache[0] = 1

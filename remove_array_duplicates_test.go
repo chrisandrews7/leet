@@ -17,12 +17,12 @@ func TestRemoveArrayDuplicates(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run("", func(t *testing.T) {
-			got := RemoveArrayDuplicates(test.input)
+			got := removeArrayDuplicates(test.input)
 			if got != test.expectedLen {
-				t.Errorf("RemoveArrayDuplicates(%d) de-duplicated length was %v, wanted %v", test.input, got, test.expectedLen)
+				t.Errorf("removeArrayDuplicates(%d) de-duplicated length was %v, wanted %v", test.input, got, test.expectedLen)
 			}
 			if !reflect.DeepEqual(test.input[:test.expectedLen], test.expectedArr) {
-				t.Errorf("RemoveArrayDuplicates(%d) de-duplicated array was %v, wanted %v", test.input, test.input[:test.expectedLen], test.expectedArr)
+				t.Errorf("removeArrayDuplicates(%d) de-duplicated array was %v, wanted %v", test.input, test.input[:test.expectedLen], test.expectedArr)
 			}
 		})
 	}

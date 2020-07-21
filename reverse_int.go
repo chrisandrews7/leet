@@ -4,7 +4,7 @@ import (
 	"math"
 )
 
-func ReverseInt(x int) int {
+func reverseInt(x int) int {
 	var reversed int
 
 	for x != 0 {

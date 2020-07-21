@@ -1,6 +1,6 @@
 package main
 
-func Fibonacci(n int) int {
+func fibonacci(n int) int {
 	cache := make(map[int]int)
 
 	cache[1] = 1

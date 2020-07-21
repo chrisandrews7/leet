@@ -16,9 +16,9 @@ func TestMaximumSubarray(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run("", func(t *testing.T) {
-			got := MaximumSubarray(test.input)
+			got := maximumSubarray(test.input)
 			if got != test.expected {
-				t.Errorf("MaximumSubarray(%d) got %v, want %v", test.input, got, test.expected)
+				t.Errorf("maximumSubarray(%d) got %v, want %v", test.input, got, test.expected)
 			}
 		})
 	}

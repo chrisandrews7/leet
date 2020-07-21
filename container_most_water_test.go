@@ -15,9 +15,9 @@ func TestContainerMostWater(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run("", func(t *testing.T) {
-			got := ContainerMostWater(test.input)
+			got := containerMostWater(test.input)
 			if got != test.expected {
-				t.Errorf("TestContainerMostWater(%d) got %v, want %v", test.input, got, test.expected)
+				t.Errorf("containerMostWater(%d) got %v, want %v", test.input, got, test.expected)
 			}
 		})
 	}

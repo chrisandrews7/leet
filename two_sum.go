@@ -1,6 +1,6 @@
 package main
 
-func TwoSum(nums []int, target int) []int {
+func twoSum(nums []int, target int) []int {
 	previousSubtractions := make(map[int]int)
 
 	for index, num := range nums {

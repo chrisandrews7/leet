@@ -20,9 +20,9 @@ func TestLongestCommonPrefix(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run("", func(t *testing.T) {
-			got := LongestUniqueSubstring(test.input)
+			got := longestCommonPrefix(test.input)
 			if got != test.expected {
-				t.Errorf("LongestCommonPrefix(%s) got %v, want %v", test.input, got, test.expected)
+				t.Errorf("longestCommonPrefix(%s) got %v, want %v", test.input, got, test.expected)
 			}
 		})
 	}

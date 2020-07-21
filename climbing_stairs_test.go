@@ -20,9 +20,9 @@ func TestClimbStairs(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(string(test.input), func(t *testing.T) {
-			got := ClimbStairs(test.input)
+			got := climbStairs(test.input)
 			if got != test.expected {
-				t.Errorf("ClimbStairs(%d) got %v, want %v", test.input, got, test.expected)
+				t.Errorf("climbStairs(%d) got %v, want %v", test.input, got, test.expected)
 			}
 		})
 	}

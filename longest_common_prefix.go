@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-func LongestUniqueSubstring(strs []string) string {
+func longestCommonPrefix(strs []string) string {
 	switch len(strs) {
 	case 0:
 		return ""
