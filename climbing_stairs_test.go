@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -19,7 +20,7 @@ func TestClimbStairs(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		t.Run(string(test.input), func(t *testing.T) {
+		t.Run(fmt.Sprint(test.input), func(t *testing.T) {
 			got := climbStairs(test.input)
 			if got != test.expected {
 				t.Errorf("climbStairs(%d) got %v, want %v", test.input, got, test.expected)
