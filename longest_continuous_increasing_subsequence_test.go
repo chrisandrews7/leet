@@ -12,6 +12,7 @@ func TestLongestContinuousIncreasingSubsequence(t *testing.T) {
 	}{
 		{[]int{1, 3, 5, 4, 7}, 3},
 		{[]int{2, 2, 2, 2, 2}, 1},
+		{[]int{}, 0},
 	}
 
 	for _, test := range tests {

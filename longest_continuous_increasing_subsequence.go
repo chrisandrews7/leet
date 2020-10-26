@@ -6,20 +6,18 @@ func findLengthOfLCIS(nums []int) int {
 	}
 
 	maxLength := 1
-	length := 1
+	windowStart := 0
 
-	for index, num := range nums[1:] {
-		if nums[index] < num {
-			length++
+	for i, num := range nums[1:] {
+		index := i + 1
 
-			if length > maxLength {
-				maxLength = length
-			}
-
-			continue
+		if nums[index-1] >= num {
+			windowStart = index
 		}
 
-		length = 1
+		if length := index - windowStart + 1; length > maxLength {
+			maxLength = length
+		}
 	}
 
 	return maxLength
