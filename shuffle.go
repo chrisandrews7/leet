@@ -1,6 +1,8 @@
 package main
 
-func shuffle(nums []int, n int) (result []int) {
+func shuffle(nums []int, n int) []int {
+	result := make([]int, 0, len(nums))
+
 	left := 0
 	right := n
 
@@ -10,5 +12,5 @@ func shuffle(nums []int, n int) (result []int) {
 		right++
 	}
 
-	return
+	return result
 }
